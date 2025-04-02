@@ -3,6 +3,9 @@ class Waypoint:
         self.name = name
         self.lat = lat
         self.lon = lon
+    
+    #def __str__(self):
+    #    return f"({self.name}, {self.lat}, {self.lon})"
 
 def ShowWaypoint(waypoint):
     print('Nombre:{0}, lat:{1}, lon:{2}'
@@ -24,5 +27,3 @@ def HaversineDistance(lat1, lon1, lat2, lon2):
     c = 2 * math.asin(raiz)
     R = 6371000 #Earths's radius in meters
     return c * R
-
-print(HaversineDistance(41.381623923229995, 2.122853541678448, 40.453030507454244, -3.6883551609249308))
